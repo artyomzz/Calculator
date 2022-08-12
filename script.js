@@ -1,5 +1,3 @@
-
-
 const add = function(leftOp, rightOp) {
     return leftOp + rightOp;
 }

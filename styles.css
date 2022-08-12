@@ -30,8 +30,20 @@ button {
     width: 95px;
 }
 
-button.operator, .equals {
+.operator, .equals {
     background-color: #FF8F1F;
+}
+
+.operator:focus, .equals:focus {
+    background-color: #FFC183;
+}
+
+.operand:active, .decimal:active {
+    background-color: #33B9BB;
+}
+
+.clear:active, .sign:active, .percent:active {
+    background-color: rgb(123, 189, 255);
 }
 
 .clear, .sign, .percent {
