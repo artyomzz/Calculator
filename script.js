@@ -164,3 +164,13 @@ document.querySelector('.equals').addEventListener('click', handleEqualsButton);
 document.querySelector('.percent').addEventListener('click', handlePercentButton);
 document.querySelector('.decimal').addEventListener('click', handleDecimalButton);
 document.querySelector('.sign').addEventListener('click', handleChangeSignButton);
+
+
+document.addEventListener('keydown', (event) => {
+    const keyCode = event.keyCode;
+    console.log(`keyCode: ${keyCode}`);
+    const element = document.querySelector(`button[data-key="${keyCode}"]`);
+    if (element) {
+        element.click();
+    }
+});
